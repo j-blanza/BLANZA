@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="images/icon.png" type=""image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <style>
+           * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Playfair Display;
+}
+
+body {
+    background-color: #eedbbf;
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #67191F ;
+    color: #eedbbf;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #eedbbf;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-image: url(images/joyce1.jpg); /* Set the background to black */
+    background-size: cover;
+    color: #eedbbf;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+/* Body Text Section */
+.body-text-section {
+    text-align: justify;
+    margin: 50px 0;
+}
+
+.body-text-section p {
+    font-size: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #67191F;
+    line-height: 1.6;
+}
+
+/* Divider Line */
+.divider {
+    width: 50%;
+    margin: 40px auto;
+    border-bottom: 1px solid #ddd;
+}
+.firsttext {
+    font-weight: bold;
+
+}
+.image-row {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px auto;
+            margin-inline-start: 200px;
+            margin-inline-end: 200px;
+        }
+
+        .image-row img {
+            width: 30%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .zoomable:hover {
+            transform: scale(1.20); /* Slightly zoom in on hover */
+        }
+
+        .zoomed {
+            transform: scale(2); /* Zoom in on click */
+            z-index: 10; /* Bring to front */
+            position: relative; /* Positioning context for z-index */
+        }
+
+/* Footer */
+footer {
+    background-color: #67191F;
+    color: #eedbbf;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #1da1f2;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo" onclick="goHome()">Joyce</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <h1>About Me</h1>
+        <p>"It takes something more than intelligence to act intelligently." 
+            <i>— Crime and Punishment, Fyodor Dostoyevsky</i>     
+        </p>
+        
+    </section>
+
+    <!-- Body Text Section -->
+    <section class="body-text-section">
+        <div class="divider"></div>
+            <div class="firsttext">
+                <p>Let me introduce myself. My name is Joyce Ann R. Blanza, you can call be Joyce. I just turned 21
+                    last July 12. I was born and raised in Quezon City. I'm a working-student currently studying at
+                    Quezon City University taking Bachelor's of Science Information Technology as a freshman and working at
+                    Concentrix as a Technical Advisor since last July 2023. <br>
+                    <br>
+                    I have two older brothers and three younger siblings. My mom is a housewife and my father works as a
+                    a chef at a catering service. I graduated as an Information and Communication Technology student at Asian
+                    Institute of Computer Studies back in 2022. I had to take two gap years in order to support myself and help my
+                    family as well. <br>
+                    <br>
+                    I have a lot of hobbies but what they all have in common is that they revolve around art. I do 
+                    digital and traditional art, crochet, beadwork, and as well as nail art. I mostly do crochet
+                    no because it works best for my schedule. Here are some samples of what I do!
+                </p>
+                <div class="image-row">
+                    <img class="zoomable" src="images/a.jpg" alt="Art Sample 1">
+                    <img class="zoomable" src="images/b.jpg" alt="Art Sample 2">
+                    <img class="zoomable" src="images/c.png" alt="Art Sample 3">    
+                </div>
+            </div>
+            
+            </div>
+            <div class="firsttext">
+                <p>Aside from those mentioned above, I occasionally do cosplay as well if I'm not too busy. I haven't
+                    done a lot but here's a few. So far, I have cosplayed Xiao from Genshin Impact, Deku from My Hero 
+                    Academia, and Reiju from One Piece. Here are some photos if you want to see!
+                </p>
+            <div class="image-row">
+                <img class="zoomable" src="images/d.jpg" alt="Art Sample 1">
+                <img class="zoomable" src="images/f.jpg" alt="Art Sample 2">
+                <img class="zoomable" src="images/e.jpg" alt="Art Sample 3">    
+            </div>
+            <div class="firsttext">
+                <p>A few more things that I enjoy are reading books and watching movies.
+                I like reading classic novels but recently what stood out to me and my current favorite is The Seven Husbands
+                of Evelyn Hugo written by Taylor Jenkins Reid. I'm also a big fan of the Marvel Cinematic Universe. My favorites
+                includes Loki, Tony Stark, and Yelena. I'm also a big fan of music. I listen to all kinds of music like pop, kpop, jpop,
+                punk, rock, alt, theater, etc.
+                </p><br>
+                <br>
+                <p>
+                    Enough about what I like. Let's talk about what I aspire to be. Let's be honest here. The main goal
+                    is to be rich. I would be lying if I said that rich is not what I want to be someday but, aside from that
+                    what I want to be as well is to be known as a good, respectable person. I have a strong sense of justice and
+                    I value my morals above everything. I want to be someone who can be of help o everyone aorund me. I want to be
+                    a shoulder that they can lean on and hopefully I be that person someday.
+                </p><br>
+            </div>
+    </section>
+
+    <footer>
+
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com/hahainutil?mibextid=ZbWKwL" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://www.x.com/mayari_n" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/chickenjoyce_" target="_blank" class="fab fa-instagram"></a>
+        </div>
+        <p>&copy; 2024 Joyce's Website.</p>
+    </footer>
+
+</body>
+</html>
